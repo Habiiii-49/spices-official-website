@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background-color: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: #29f700 !important;
+
+}
+#navbarSupportedContent a{
+     color: white;
+     border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+     border-bottom: 2px solid #29f700;
+}
+#navbarSupportedContent button{
+    background: #29f700;
+    width: 5rem;
+    border-radius: 15px;
+}
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4)), url(pratiksha-mohanty-V0xp-dTS3z0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#Home h1 {
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 6px 0px #ccc,
+                 0px 7px 0px #ccc;
+    animation: slideDown 1.2s ease;
+}
+
+#Home p {
+    font-size: 18px;
+    color: #fff;
+    animation: fadeIn 2s ease;
+}
+
+#Home .input-group {
+    width: 40%;
+    height: 45px;
+}
+
+.btn-signin {
+    background: green !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-signin:hover {transform: scale(1.05);
+    box-shadow: 4px 6px 10px rgba(0,0,0,.4);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+#about{
+    background:linear-gradient(to right, #d4fc79,#96e6a1);
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: #2e7d32;
+}
+#about p{
+    color: #1b1b1b;
+}
+
+#product{
+    background: #e6ffe6;
+}
+#product h1{
+    color:  #517c00;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 15px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;     
+    margin: 20px 60px;
+    flex-direction: column;
+    transition: .2s;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: .2s;
+}
+#contact{
+    background: linear-gradient(to right,#a8e063,#56ab2f);
+}
+#contact img {
+  height: 85%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#contact img:hover {
+  transform: scale(1.05);
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+#contact h1{
+    color: rgb(1, 54, 2);
+    text-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#footer {
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  color: white;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.footer-container h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #222;
+}
+
